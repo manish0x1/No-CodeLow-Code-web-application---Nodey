@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Fast pre-commit: only lint staged files, skip typecheck (CI will catch type errors)
+npx lint-staged
